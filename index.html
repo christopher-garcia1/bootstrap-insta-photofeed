@@ -69,14 +69,58 @@
   </header>
   <main>
     <div class="container">
-        <div class="text-center p-2">
-            <button type="button" class="btn btn-light m-2">
-                <img src="icons\grid-3x3-gap-fill.svg">
-            </button>
-            <button type="button" class="btn btn-light m-2">
-                <img src="icons\square-fill.svg">
-            </button>
+        <ul class="nav nav-pills justify-content-center p-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link bg-light" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+              <img src="/bootstrap-insta-photofeed\icons\grid-3x3-gap-fill.svg" alt="" srcset="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-light" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <img src="/bootstrap-insta-photofeed\icons\square-fill.svg" alt="" srcset="">
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content w-100 justify-content-center" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row">
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\Cyber-Corn-Woman.jpg" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\free-stock-photos-02-620x413.jpg.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\gallery_yeti.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\man-proposing-to-a-broom.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\original_image15044835-e04e-4dc7-83f9-2b04175e08dc.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\pineapple-businessman.jpg" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\sub-buzz-442-1632946391-2.jpg" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\Weird-Stock-Photography-Haje-Kamps-websize.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+                <div class="col-md-4 mt-4">
+                  <img src="/bootstrap-insta-photofeed\instaphotos\main-qimg-74162e53dce8b6f3d1001f41a7cc49ed-pjlq.jfif" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
+                </div>
+              </div>
+          </div>
         </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">hello</div>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
