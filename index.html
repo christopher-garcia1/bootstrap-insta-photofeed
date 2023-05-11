@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Photofeed</title>
+  <title>Bootstrap Photo feed</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,114 +13,131 @@
 <body>
   <header>
     <nav class="navbar navbar-expand bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="icons\instagram (1).svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Instagram
-            </a>
-            <div class="navbar-nav">
-                <div class="nav-item">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPost">Create new post</button>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="icons\instagram (1).svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          Instagram
+        </a>
+        <div class="navbar-nav">
+          <div class="nav-item">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPost">Create new
+              post</button>
+          </div>
+          <div class="modal" id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal" id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                                <label for="caption-text" class="col-form-label">Caption:</label>
-                                <textarea class="form-control" id="caption-text">Add the caption of your post here</textarea>
-                              </div>
-                              <button class="btn btn-light" alt="" width="30" height="24">
-                                    <img src="icons\camera-fill.svg">
-                              </button>
-                              <button class="btn btn-light" alt="" width="30" height="24">
-                                    <img src="icons\geo-alt-fill.svg">
-                              </button>
-                          </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-success">Publish</button>
-                        </div>
-                      </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="caption-text" class="col-form-label">Caption:</label>
+                      <textarea class="form-control" id="caption-text">Add the caption of your post here</textarea>
                     </div>
-                  </div>
-                <div class="nav-item">
-                    <div class="dropdown">
-                        <button type="button" class="btn dropdown-toggle btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="icons\gear-fill.svg" alt="" width="30" height="24" class="d-inline-block align-text-top text-light">
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Accessability</a></li>
-                            <li><a class="dropdown-item border-bottom" href="#">Privacy and data</a></li>
-                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
-                        </ul>
-                    </div>
+                    <button class="btn btn-light" alt="" width="30" height="24">
+                      <img src="icons\camera-fill.svg">
+                    </button>
+                    <button class="btn btn-light" alt="" width="30" height="24">
+                      <img src="icons\geo-alt-fill.svg">
+                    </button>
+                  </form>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle btn-secondary" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="icons\gear-fill.svg" alt="" width="30" height="24"
+                  class="d-inline-block align-text-top text-light">
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accessability</a></li>
+                <li><a class="dropdown-item border-bottom" href="#">Privacy and data</a></li>
+                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </nav>
   </header>
   <main>
     <div class="container">
-        <ul class="nav nav-pills justify-content-center p-3" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link bg-light" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-              <img src="/bootstrap-insta-photofeed\icons\grid-3x3-gap-fill.svg" alt="" srcset="">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link bg-light" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
-              <img src="/bootstrap-insta-photofeed\icons\square-fill.svg" alt="" srcset="">
-            </a>
-          </li>
-        </ul>
-        <div class="tab-content w-100 justify-content-center" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              <div class="row">
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\Cyber-Corn-Woman.jpg" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\free-stock-photos-02-620x413.jpg.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\gallery_yeti.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\man-proposing-to-a-broom.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\original_image15044835-e04e-4dc7-83f9-2b04175e08dc.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\pineapple-businessman.jpg" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\sub-buzz-442-1632946391-2.jpg" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\Weird-Stock-Photography-Haje-Kamps-websize.webp" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-                <div class="col-md-4 mt-4">
-                  <img src="/bootstrap-insta-photofeed\instaphotos\main-qimg-74162e53dce8b6f3d1001f41a7cc49ed-pjlq.jfif" alt="" class="img-thumbnail" style ="height: 297px; width: 416px;">
-                </div>
-              </div>
+      <ul class="nav nav-pills justify-content-center p-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active bg-light" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
+            aria-controls="pills-home" data-bs-target="#pills-home" aria-selected="true">
+            <img src="/bootstrap-insta-photofeed\icons\grid-3x3-gap-fill.svg" alt="" srcset="">
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link bg-light" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
+            aria-controls="pills-profile" data-bs-target="#pills-profile" aria-selected="false">
+            <img src="/bootstrap-insta-photofeed\icons\square-fill.svg" alt="" srcset="">
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\Cyber-Corn-Woman.jpg" alt="" class="img-thumbnail"
+                style="height: 297px; width: 416px;">
+            </div>
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\free-stock-photos-02-620x413.jpg.webp" alt=""
+                class="img-thumbnail" style="height: 297px; width: 416px;">
+            </div>
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\gallery_yeti.webp" alt="" class="img-thumbnail"
+                style="height: 297px; width: 416px;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\man-proposing-to-a-broom.webp" alt=""
+                class="img-thumbnail" style="height: 297px; width: 416px;">
+            </div>
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\original_image15044835-e04e-4dc7-83f9-2b04175e08dc.webp"
+                alt="" class="img-thumbnail" style="height: 297px; width: 416px;">
+            </div>
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\pineapple-businessman.jpg" alt="" class="img-thumbnail"
+                style="height: 297px; width: 416px;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\sub-buzz-442-1632946391-2.jpg" alt=""
+                class="img-thumbnail" style="height: 297px; width: 416px;">
+            </div>
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\Weird-Stock-Photography-Haje-Kamps-websize.webp" alt=""
+                class="img-thumbnail" style="height: 297px; width: 416px;">
+            </div>
+            <div class="col-md-4 mt-4">
+              <img src="/bootstrap-insta-photofeed\instaphotos\main-qimg-74162e53dce8b6f3d1001f41a7cc49ed-pjlq.jfif"
+                alt="" class="img-thumbnail" style="height: 297px; width: 416px;">
+            </div>
           </div>
         </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">hello</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          house
         </div>
       </div>
+
+    </div>
+    </div>
     </div>
   </main>
   <footer>
@@ -129,11 +146,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>
